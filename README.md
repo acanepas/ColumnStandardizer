@@ -39,7 +39,7 @@ Also, this output can be used in `Table.SelectColumns` to drop any columns that 
 You can also play with the optional parameters. The default symbol list is `{".","/","_","-"," ","\"}`. If you want to override it, or make your own, you can with the following syntax. Let's say you want to exclude only the symbol "|"
 
 ```
-ColumnStandardizer({"Date.Month","SalesAmount","Profit"},{"Sales Amount", "Date Month"},null, {"|"})
+ColumnStandardizer({"Date.Month","SalesAmount","Profit"},{"Sales Amount", "Date Month"},null, `{"|"}`)
 ```
 Generating the same output above.
 
