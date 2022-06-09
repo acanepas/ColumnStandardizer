@@ -27,16 +27,17 @@ let
      */
       GetTextSimilarity = (col_one as text, col_two as text, optional symbol_list as list) as number =>
         let
+        default_symbols = {".","/","_","-"," ","\"},
           col_one_clean = 
             if symbol_list <> null then
               Text.Remove(col_one, symbol_list)
             else
-              Text.Remove(col_one, {"/", "_"}), 
+              Text.Remove(col_one, default_symbols), 
           col_two_clean = 
             if symbol_list <> null then
               Text.Remove(col_two, symbol_list)
             else
-              Text.Remove(col_two, {"/", "_"}), 
+              Text.Remove(col_two, default_symbols), 
           Records = [
             ColumnNameOne = Text.Lower(col_one_clean), 
             ColumnNameTwo = Text.Lower(col_two_clean)
