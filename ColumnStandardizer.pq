@@ -4,7 +4,7 @@
  * @author https://github.com/acanepas
  * @source https://github.com/acanepas/ColumnStandardizer
  * @license MIT (c) 2022 Angelo Canepa
- * @version 2022-09-06-1
+ * @version 2022-06-09-1
  */
 let
   Source = (
